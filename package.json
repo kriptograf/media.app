@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "@heroicons/vue": "v1",
+    "@nuxtjs/tailwindcss": "^6.2.0"
   }
 }

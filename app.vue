@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="min-h-full">
+
+    <LoadingPage v-if="isAuthLoading" />
+
+    <div v-else-if="user" class="min-h-full">
       <div class="container mx-auto">
         <div class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w7xl lg:px-8 lg:gap-5">
           <!--        Left sidebar       -->
@@ -22,5 +25,19 @@
         </div>
       </div>
     </div>
+
+    <AuthPage v-else />
+
   </div>
 </template>
+
+<script setup>
+const { useAuthUser, initAuth, useAuthLoading } = useAuth();
+
+const isAuthLoading = useAuthLoading();
+const user = useAuthUser();
+
+onBeforeMount(() => {
+  initAuth();
+});
+</script>

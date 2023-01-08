@@ -40,3 +40,20 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+## Prisma mongo db
+
+- Выполняется миграция создается база данных и создаются таблицы
+
+```
+npx prisma db push
+```
+
+## TODO
+
+- Видимо придется перейти на postgresql
+
+```
+sudo systemctl start postgresql
+```

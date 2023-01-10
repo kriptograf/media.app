@@ -8,7 +8,8 @@ import { getUserById } from '~~/server/db/users';
  */
 export default defineEventHandler( async (event) => {
     const endpoints = [
-        '/api/auth/user'
+        '/api/auth/user',
+        '/api/user/posts'
     ];
 
     const isHandledByThisMiddleware = endpoints.some(endpoint => {

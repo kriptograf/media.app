@@ -1,7 +1,9 @@
 <template>
   <div>
     <MainSection title="Home" :loading="loading">
-      Home page
+
+      <PostForm :user="user" />
+
     </MainSection>
   </div>
 </template>
@@ -10,4 +12,6 @@
 import {ref} from "vue";
 
 const loading = ref(false);
+const { useAuthUser } = useAuth();
+const user = useAuthUser();
 </script>

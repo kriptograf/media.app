@@ -79,6 +79,20 @@
         </template>
       </SidebarLeftTab>
 
+      <div class="hidden xl:block">
+        <UiButton liquid size="lg">
+          Post
+        </UiButton>
+      </div>
+
+      <div class="block xl:hidden">
+        <UiButton>
+          <div class="h-6 w-6 font-bold">
+            <PencilIcon />
+          </div>
+        </UiButton>
+      </div>
+
     </div>
 
 
@@ -87,7 +101,7 @@
 
 <script setup>
 import { HomeIcon } from '@heroicons/vue/solid';
-import { HashtagIcon, BellIcon, InboxIcon, BookmarkIcon, DocumentTextIcon, UsersIcon, DotsCircleHorizontalIcon } from '@heroicons/vue/outline';
+import { HashtagIcon, BellIcon, InboxIcon, BookmarkIcon, DocumentTextIcon, UsersIcon, DotsCircleHorizontalIcon, PencilIcon } from '@heroicons/vue/outline';
 import useTailwindConfig from "~/composables/useTailwindConfig";
 
 const { defaultTransition } = useTailwindConfig();

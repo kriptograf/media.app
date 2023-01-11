@@ -27,6 +27,12 @@ export default defineEventHandler(async (event) => {
         authorId: userId,
     };
 
+    const replyTo = fields.replyTo;
+
+    if(replyTo && replyTo !== 'null') {
+        postData.replyToId = replyTo;
+    }
+
     const post = await createPost(postData);
 
     const filePromises = Object.keys(files).map(async key => {

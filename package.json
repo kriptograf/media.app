@@ -8,10 +8,22 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "jslint": "^0.12.1",
+    "nuxt": "3.0.0",
+    "prisma": "^4.8.1"
   },
   "dependencies": {
     "@heroicons/vue": "v1",
-    "@nuxtjs/tailwindcss": "^6.2.0"
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@prisma/client": "^4.8.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.33.0",
+    "formidable": "^2.1.1",
+    "h3": "^1.0.2",
+    "human-time": "^0.0.2",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
+    "url-pattern": "^1.0.3"
   }
 }
